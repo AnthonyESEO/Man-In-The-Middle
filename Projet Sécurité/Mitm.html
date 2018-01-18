@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+    
+<!--    <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap-responsive.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap-responsive.min.css" />-->
+</head>
+<body>
+    <div class="container-fluid" style="background:lightblue">
+        <h1> Mise en situation </h1>
+        <p> Pour simuler notre attaque Man in the middle (Mitm), nous utilisons un serveur ftp (proftpd), installé sur notre MachineServeur (Linux). Celui a été configuré de manière à permettre la connexion anonyme ainsi que des droits complets à celle-ci.
+           Nous chercherons à déposer un fichier sur ce serveur, à partir de la MachineClient (Windows). La connexion ainsi que ce fichier seront interceptés par une troisième machine (attaquant), nommée MachineCapture (Mitm).
+        </p>
+        <p style="unde">Victimes : </p>
+        <p>MachineServeur : 192.168.4.206
+        </p>
+        </p>
+        <p>MachineClient : 192.168.4.204</p>
+        <button class="btn btn-primary" type="button">Commencer</button>
+        <br></br>
+    </div>
+
+<br/><br/><br/><br/><br/>
+
+    <div class="container-fluid" text-align="center" id="ConnexionFtp" heigth=100%>
+        <h2 align="center" id="ParagrapheConnexionFtp">Affichage console et connexion ftp</h2>
+        <p> <br/>
+            <div align="left">On ouvre une console CMD sous Windows :</div>
+            <br/>
+        </p>
+        <div style="text-align: center;">
+            <img src="capture_coté_client\console_vide.PNG" class="img-thumbnail" />
+            <!--<input type="text" style="width:1500px; height:200px;align" />-->
+            <p><div align="left">Tapez la commande pour se connecter au serveur ftp (MachineServeur : 192.168.4.206) :</div></p>
+            
+            <button id="boutonSolutionConnexionFtp" class="btn btn-warning" type="button">Afficher/cacher solution</button>
+            <p id="solutionConnexionFtp"><div align="left">ftp 192.168.4.206</div></p>
+
+            <!--<textarea style="width: 90%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>-->
+            <input id="consoleConnexionFtp" type="text" name="consoleConnexionFtp">
+            <p></p>
+            <button id="BoutonValidationConnexionFtp" class="btn btn-primary" type="button">Entrée</button> 
+        </div>
+    </div>
+
+<br/><br/><br/><br/><br/>
+
+    <div class="container-fluid" text-align="center" id="ConnexionUtilisateur" heigth=100%>
+        <h2 align="center" id="ParagrapheConnexionUtilisateur">Renseignement de l'utilisateur</h2>
+        <div style="text-align: center;">
+            <img src="capture_coté_client\debut_connexion.PNG" class="img-thumbnail" />
+            <!--<input type="text" style="width:1500px; height:200px;align" />-->
+            <p>
+                <div align="left">Renseignez l’utilisateur (ftp) :</div>
+            </p>
+            
+            <button id="boutonSolutionConnexionUtilisateur" class="btn btn-warning" type="button">Afficher/cacher solution</button>
+            <p id="solutionConnexionUtilisateur"><div align="left">ftp</div></p>
+
+            <!--<textarea style="width: 90%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>-->
+            <input id="consoleConnexionUtilisateur" type="text" name="consoleConnexionUtilisateur">
+            <p></p>
+            <button id="BoutonValidationConnexionUtilisateur" class="btn btn-primary" type="button">Entrée</button>
+        </div>
+    </div>
+
+<br/><br/><br/><br/><br/>
+
+    <div class="container-fluid" text-align="center" id="ConnexionMdp" heigth=100%>
+        <h2 align="center" id="ParagrapheConnexionMdp">Renseignement du mot de passe</h2>
+        <div style="text-align: center;">
+            <img src="capture_coté_client\debut_connexion_utilisateur.PNG" class="img-thumbnail" />
+            <!--<input type="text" style="width:1500px; height:200px;align" />-->
+            <p><div align="left">Renseignez le mot de passe (motdepasse) :</div></p>
+            
+            <button id="boutonSolutionConnexionMdp" class="btn btn-warning" type="button">Afficher/cacher solution</button>
+            <p id="solutionConnexionMdp"><div align="left">motdepasse</div></p>
+
+            <!--<textarea style="width: 90%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>-->
+            <input id="consoleConnexionMdp" type="text" name="consoleConnexionMdp">
+            <p></p>
+            <button id="BoutonValidationConnexionMdp" class="btn btn-primary" type="button">Entrée</button>
+        </div>
+    </div>
+
+<br/><br/><br/><br/><br/>
+
+    <div class="container-fluid" text-align="center" id="ContenuServeur">
+        <h2 align="center" id="ParagrapheContenuServeur">Visualisation contenu serveur</h2>
+        <div style="text-align: center;">
+            <img src="capture_coté_client\debut_connexion_mdp.PNG" class="img-thumbnail" />
+            <!--<input type="text" style="width:1500px; height:200px;align" />-->
+            <p><div align="left">Cherchez à savoir ce qu’il y a actuellement sur le serveur ftp :</div></p>
+            
+            <button id="boutonSolutionContenuServeur" class="btn btn-warning" type="button">Afficher/cacher solution</button>
+            <p id="solutionContenuServeur"><div align="left">ls</div></p>
+
+            <!--<textarea style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>-->
+            <input id="consoleContenuServeur" type="text" name="consoleContenuServeur">
+            <p></p>
+            <button id="BoutonValidationContenuServeur" class="btn btn-primary" type="button">Entrée</button>
+        </div>
+    </div>
+
+<br/><br/><br/><br/><br/>
+
+    <div class="container-fluid" text-align="center" id="Deconnexion">
+        <h2 align="center" id="ParagrapheDeconnexion">Déconnexion</h2>
+        <div style="text-align: center;">
+            <img src="capture_coté_client\ls_vide.PNG" class="img-thumbnail" />
+            <!--<input type="text" style="width:1500px; height:200px;align" />-->
+            <p><div align="left">Déconnectez-vous du serveur ftp :</div></p>
+            
+            <button id="boutonSolutionDeconnexion" class="btn btn-warning" type="button">Afficher/cacher solution</button>
+            <p id="solutionDeconnexion"><div align="left">bye</div></p>
+
+            <!--<textarea style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>-->
+            <input id="consoleDeconnexion" type="text" name="consoleDeconnexion">
+            <p></p>
+            <button id="BoutonValidationDeconnexion" class="btn btn-primary" type="button">Entrée</button>
+        </div>
+    </div>
+
+<br/><br/><br/><br/><br/>
+
+    <div class="container-fluid" text-align="center" id="DeplacementDossier">
+        <h2 align="center" id="ParagrapheDeplacementDossier">Création de fichier (Etape 1)</h2>
+        <p> <br/>
+            <div align="left">On veut créer un fichier transfert.txt (pour l’envoyer ensuite sur le serveur).</div>
+            <br/>
+        </p>
+        <div style="text-align: center;">
+            <img src="capture_coté_client\bye.PNG" class="img-thumbnail" />
+            <!--<input type="text" style="width:1500px; height:200px;align" />-->
+            <p><div align="left">Déplacez-vous d’abord dans le dossier voulu, ici Documents :</div></p>
+            
+            <button id="boutonSolutionDeplacementDossier" class="btn btn-warning" type="button">Afficher/cacher solution</button>
+            <p id="solutionDeplacementDossier"><div align="left">cd Documents</div></p>
+
+            <!--<textarea style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>-->
+            <input id="consoleDeplacementDossier" type="text" name="consoleDeplacementDossier">
+            <p></p>
+            <button id="BoutonValidationDeplacementDossier" class="btn btn-primary" type="button">Entrée</button>
+        </div>
+    </div>
+
+<br/><br/><br/><br/><br/>
+
+    <div class="container-fluid" text-align="center" id="CreationFichier">
+        <h2 align="center" id="ParagrapheCreationFichier">Création de fichier (Etape 2)</h2>
+        <p> <br/>
+            <div align="left">On veut créer un fichier transfert.txt (pour l’envoyer ensuite sur le serveur).</div>
+            <br/>
+        </p>
+        <div style="text-align: center;">
+            <img src="capture_coté_client\transfert_console.PNG" class="img-thumbnail" />
+            <!--<input type="text" style="width:1500px; height:200px;align" />-->
+            <p><div align="left">Créez maintenant le fichier "fichier.txt" contenant le texte suivant "texte dans le fichier de transfert" :</div></p>
+            
+            <button id="boutonSolutionCreationFichier" class="btn btn-warning" type="button">Afficher/cacher solution</button>
+            <p id="solutionCreationFichier"><div align="left">echo texte dans le fichier de transfert > fichier.txt</div></p>
+
+            <!--<textarea style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>-->
+            <input id="consoleCreationFichier" type="text" name="consoleCreationFichier">
+            <p></p>
+            <button id="BoutonValidationCreationFichier" class="btn btn-primary" type="button">Entrée</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
