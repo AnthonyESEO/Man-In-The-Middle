@@ -1,20 +1,20 @@
 
-function valider(idInputDepart, idBoutonDepart, idBoutonDestination, reponse) {
+function valider(idInputDepart, idBoutonDepart, idConteneurDestination) {
     var inputDepart = document.getElementById(idInputDepart);
-    var BoutonDepart = document.getElementById(idBoutonDepart);
-    element.addEventListener("click",function () {
-        var elementSuivant = document.getElementById(idBoutonDestination);
-        elementSuivant.setAttribute("style","");
+    var boutonDepart = document.getElementById(idBoutonDepart);
+    var elementSuivant = document.getElementById(idConteneurDestination);
+
+    boutonDepart.addEventListener("click",function () {
+        if (inputDepart.valueOf().value=="test"){
+            console.log("inputDepart = "+inputDepart.valueOf().value);
+            elementSuivant.setAttribute("style","");
+        }
+        else
+            console.log("FAUX");
     })
 
 }
 
 window.onload=function() {
-    // valider("bouton","2");
-    var inputDepart = document.getElementById("inputDepart");
-    var boutonDepart = document.getElementById("bouton");
-
-    boutonDepart.addEventListener("click",function () {
-        console.log("inputDepart = "+inputDepart.valueOf().value);
-    })
+    valider("consoleConnexionFtp", "BoutonValidationConnexionFtp", "ConnexionUtilisateur");
 }
