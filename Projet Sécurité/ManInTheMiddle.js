@@ -92,4 +92,4 @@ window.onload=function() {
     aide("boutonSolutionContenuServeur2", "solutionContenuServeur2");
 
     valider2("BoutonValidationContenuServeurWeb","EtudeCaptureWireshark");
-}
+};
