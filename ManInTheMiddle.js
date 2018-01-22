@@ -15,6 +15,14 @@ function valider(idInputDepart, idBoutonDepart, idConteneurDestination, reponse)
 
 }
 
+function valider2(boutonDepart, containerArrive) {
+    var boutonValidation = document.getElementById(boutonDepart);
+    var container = document.getElementById(containerArrive);
+    boutonValidation.addEventListener("click", function () {
+        container.setAttribute("style", "");
+    });
+}
+
 function aide(idBouton, idInput) {
     var boutonAide = document.getElementById(idBouton);
     var contenuAide = document.getElementById(idInput);
@@ -31,44 +39,57 @@ window.onload=function() {
     aide("boutonSolutionConnexionFtp","solutionConnexionFtp");
 
     valider("consoleConnexionUtilisateur", "BoutonValidationConnexionUtilisateur", "ConnexionMdp", "test");
-    //aide("boutonSolutionConnexionFtp","solutionConnexionFtp");
+    aide("boutonSolutionConnexionUtilisateur","solutionConnexionUtilisateur");
 
     valider("consoleConnexionMdp", "BoutonValidationConnexionMdp", "ContenuServeur", "test");
-    //aide("boutonSolutionConnexionFtp","solutionConnexionFtp");
+    aide("boutonSolutionConnexionMdp","solutionConnexionMdp");
 
     valider("consoleContenuServeur", "BoutonValidationContenuServeur", "Deconnexion", "test");
-    //aide("boutonSolutionConnexionFtp","solutionConnexionFtp");
+    aide("boutonSolutionContenuServeur","solutionContenuServeur");
 
     valider("consoleDeconnexion", "BoutonValidationDeconnexion", "DeplacementDossier", "test");
-    //aide("boutonSolutionConnexionFtp","solutionConnexionFtp");
+    aide("boutonSolutionDeconnexion","solutionDeconnexion");
 
     valider("consoleDeplacementDossier", "BoutonValidationDeplacementDossier", "CreationFichier", "test");
-    //aide("boutonSolutionConnexionFtp","solutionConnexionFtp");
+    aide("boutonSolutionDeplacementDossier","solutionDeplacementDossier");
 
     valider("consoleCreationFichier", "BoutonValidationCreationFichier", "VisualisationCommandeEcritureFichier", "test");
-    //aide("boutonSolutionConnexionFtp","solutionConnexionFtp");
+    aide("boutonSolutionCreationFichier","solutionCreationFichier");
 //////////////////////
+    valider2("BoutonValidationVisualisationCommandeEcritureFichier","ConnexionAdminMachineCapture");
 
-    var boutonValidation = document.getElementById("BoutonValidationVisualisationCommandeEcritureFichier");
-    var container = document.getElementById("ConnexionAdminMachineCapture");
-    boutonValidation.addEventListener("click", function () {
-        container.setAttribute("style", "");
-    });
+    valider("consoleConnexionAdminMachineCapture", "BoutonValidationConnexionAdminMachineCapture", "EffacementEcranConsole", "test");
+    aide("boutonSolutionConnexionAdminMachineCapture","solutionConnexionAdminMachineCapture");
 
-    /*
-    valider("consoleDeplacementDossier", "BoutonValidationDeplacementDossier", "CreationFichier", "test");
-    aide("boutonSolutionConnexionFtp","solutionConnexionFtp");
+    valider("consoleEffacementEcranConsole", "BoutonValidationEffacementEcranConsole", "LancementWireshark", "test");
+    aide("boutonSolutionEffacementEcranConsole","solutionEffacementEcranConsole");
 
-    valider("consoleDeplacementDossier", "BoutonValidationDeplacementDossier", "CreationFichier", "test");
-    aide("boutonSolutionConnexionFtp","solutionConnexionFtp");
+    valider("consoleLancementWireshark", "BoutonValidationLancementWireshark", "ChoixInterfaceRéseau", "test");
+    aide("boutonSolutionLancementWireshark","solutionLancementWireshark");
 
-    valider("consoleDeplacementDossier", "BoutonValidationDeplacementDossier", "CreationFichier", "test");
-    aide("boutonSolutionConnexionFtp","solutionConnexionFtp");
+    //aide("boutonSolutionConnexionFtp","solutionConnexionFtp");
 
-    valider("consoleDeplacementDossier", "BoutonValidationDeplacementDossier", "CreationFichier", "test");
-    aide("boutonSolutionConnexionFtp","solutionConnexionFtp");
+    valider2("BoutonValidationChoixInterfaceRéseau", "Filtrage");
 
-    valider("consoleDeplacementDossier", "BoutonValidationDeplacementDossier", "CreationFichier", "test");
-    aide("boutonSolutionConnexionFtp","solutionConnexionFtp");
-    */
+    valider("consoleFiltrage", "BoutonValidationFiltrage", "VueCaptureMachineClient", "test");
+    aide("boutonSolutionFiltrage","solutionFiltrage");
+
+    valider2("BoutonValidationVueCaptureMachineClient", "Connexion2Ftp");
+
+    valider("consoleConnexion2Ftp", "BoutonValidationConnexion2Ftp", "Connexion2Utilisateur", "test");
+    aide("boutonSolutionConnexion2Ftp","solutionConnexion2Ftp");
+
+    valider("consoleConnexion2Utilisateur","BoutonValidationConnexion2Utilisateur","Connexion2Mdp", "test");
+    aide("boutonSolutionConnexion2Utilisateur", "solutionConnexion2Utilisateur");
+
+    valider("consoleConnexion2Mdp","BoutonValidationConnexion2Mdp","DepotFichier", "test");
+    aide("boutonSolutionConnexion2Mdp", "solutionConnexion2Mdp");
+
+    valider("consoleDepotFichier","BoutonValidationDepotFichier","ContenuServeur2", "test");
+    aide("boutonSolutionDepotFichier", "solutionDepotFichier");
+
+    valider("consoleContenuServeur2","BoutonValidationContenuServeur2","ContenuServeurWeb", "test");
+    aide("boutonSolutionContenuServeur2", "solutionContenuServeur2");
+
+    valider2("BoutonValidationContenuServeurWeb","EtudeCaptureWireshark");
 }
