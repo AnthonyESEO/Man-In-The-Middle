@@ -45,7 +45,7 @@
             <p><div align="left">Tapez la commande pour se connecter au serveur ftp (MachineServeur : 192.168.4.206) :</div></p>
             
             <button id="boutonSolutionConnexionFtp" class="btn btn-warning" type="button">Afficher/cacher solution</button>
-            <p id="solutionConnexionFtp"><div align="left">ftp 192.168.4.206</div></p>
+            <p id="solutionConnexionFtp" style="display: none"><div align="left">ftp 192.168.4.206</div></p>
 
             <!--<textarea style="width: 90%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>-->
             <input id="consoleConnexionFtp" type="text" name="consoleConnexionFtp">
@@ -77,7 +77,7 @@
 
 <br/><br/><br/><br/><br/>
 
-    <div class="container-fluid" text-align="center" id="ConnexionMdp" heigth=100%>
+    <div class="container-fluid" text-align="center" id="ConnexionMdp" heigth=100% style="display: none">
         <h2 align="center" id="ParagrapheConnexionMdp">Renseignement du mot de passe</h2>
         <div style="text-align: center;">
             <img src="capture_coté_client\debut_connexion_utilisateur.PNG" class="img-thumbnail" />
@@ -96,7 +96,7 @@
 
 <br/><br/><br/><br/><br/>
 
-    <div class="container-fluid" text-align="center" id="ContenuServeur">
+    <div class="container-fluid" text-align="center" id="ContenuServeur" style="display: none">
         <h2 align="center" id="ParagrapheContenuServeur">Visualisation contenu serveur</h2>
         <div style="text-align: center;">
             <img src="capture_coté_client\debut_connexion_mdp.PNG" class="img-thumbnail" />
@@ -115,7 +115,7 @@
 
 <br/><br/><br/><br/><br/>
 
-    <div class="container-fluid" text-align="center" id="Deconnexion">
+    <div class="container-fluid" text-align="center" id="Deconnexion" style="display: none">
         <h2 align="center" id="ParagrapheDeconnexion">Déconnexion</h2>
         <div style="text-align: center;">
             <img src="capture_coté_client\ls_vide.PNG" class="img-thumbnail" />
@@ -134,14 +134,14 @@
 
 <br/><br/><br/><br/><br/>
 
-    <div class="container-fluid" text-align="center" id="DeplacementDossier">
+    <div class="container-fluid" text-align="center" id="DeplacementDossier" style="display: none">
         <h2 align="center" id="ParagrapheDeplacementDossier">Création de fichier (Etape 1)</h2>
         <p> <br/>
             <div align="left">On veut créer un fichier transfert.txt (pour l’envoyer ensuite sur le serveur).</div>
             <br/>
         </p>
         <div style="text-align: center;">
-            <img src="capture_coté_client\bye.PNG" class="img-thumbnail" />
+            <img src="capture_coté_client\bye.PNG" class="img-thumbnail"/>
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Déplacez-vous d’abord dans le dossier voulu, ici Documents :</div></p>
             
@@ -157,7 +157,7 @@
 
 <br/><br/><br/><br/><br/>
 
-    <div class="container-fluid" text-align="center" id="CreationFichier">
+    <div class="container-fluid" text-align="center" id="CreationFichier" style="display: none">
         <h2 align="center" id="ParagrapheCreationFichier">Création de fichier (Etape 2)</h2>
         <p> <br/>
             <div align="left">On veut créer un fichier transfert.txt (pour l’envoyer ensuite sur le serveur).</div>

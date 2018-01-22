@@ -15,6 +15,22 @@ function valider(idInputDepart, idBoutonDepart, idConteneurDestination) {
 
 }
 
+function aide(idBouton, idInput) {
+    var boutonAide = document.getElementById(idBouton);
+    var contenuAide = document.getElementById(idInput);
+
+    boutonAide.addEventListener("click", function () {
+        contenuAide.setAttribute("style", "");
+    })
+
+}
+
 window.onload=function() {
     valider("consoleConnexionFtp", "BoutonValidationConnexionFtp", "ConnexionUtilisateur");
+    aide("boutonSolutionConnexionFtp","solutionConnexionFtp");
+    valider("consoleConnexionUtilisateur", "BoutonValidationConnexionUtilisateur", "ConnexionMdp");
+    valider("consoleConnexionMdp", "BoutonValidationConnexionMdp", "ContenuServeur");
+    valider("consoleContenuServeur", "BoutonValidationContenuServeur", "Deconnexion");
+    valider("consoleDeconnexion", "BoutonValidationDeconnexion", "DeplacementDossier");
+    valider("consoleDeplacementDossier", "BoutonValidationDeplacementDossier", "CreationFichier");
 }
