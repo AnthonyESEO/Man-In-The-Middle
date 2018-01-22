@@ -19,7 +19,7 @@
 <body>
     <div class="container-fluid" style="background:lightblue">
         <h1> Mise en situation </h1>
-        <p> Pour simuler notre attaque Man in the middle (Mitm), nous utilisons un serveur ftp (proftpd), installé sur notre MachineServeur (Linux). Celui a été configuré de manière à permettre la connexion anonyme ainsi que des droits complets à celle-ci.
+        <p> Pour simuler notre attaque Man in the middle (Mitm), nous utilisons un serveur ftp (proftpd), installé sur notre MachineServeur (Linux). Celui-ci a été configuré de manière à permettre la connexion anonyme ainsi que des droits complets à celle-ci.
            Nous chercherons à déposer un fichier sur ce serveur, à partir de la MachineClient (Windows). La connexion ainsi que ce fichier seront interceptés par une troisième machine (attaquant), nommée MachineCapture (Mitm).
         </p>
         <p style="unde">Victimes : </p>
@@ -44,19 +44,19 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Tapez la commande pour se connecter au serveur ftp (MachineServeur : 192.168.4.206) :</div></p>
             
-            <button id="boutonSolutionConnexionFtp" class="btn btn-warning" type="button">Afficher/cacher solution</button>
-            <p id="solutionConnexionFtp" style="display: none"><div align="left">ftp 192.168.4.206</div></p>
-
-            <!--<textarea style="width: 90%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>-->
-            <input id="consoleConnexionFtp" type="text" name="consoleConnexionFtp">
+            <textarea id="consoleConnexionFtp" style="width: 90%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>
+            <!--<input type="text" name="consoleConnexionFtp">-->
             <p></p>
-            <button id="BoutonValidationConnexionFtp" class="btn btn-primary" type="button">Entrée</button> 
+            <p><div align="center" id="solutionConnexionFtp" style="display: none">ftp 192.168.4.206</div></p>
+            <button id="BoutonValidationConnexionFtp" class="btn btn-primary" type="button">Entrée</button>
+            <button id="boutonSolutionConnexionFtp" class="btn btn-warning" type="button">Afficher/cacher solution</button>
+
         </div>
     </div>
 
 <br/><br/><br/><br/><br/>
 
-    <div class="container-fluid" text-align="center" id="ConnexionUtilisateur" style="display: none" heigth=100%>
+    <div class="container-fluid" text-align="center" id="ConnexionUtilisateur" heigth=100% style="display: none">
         <h2 align="center" id="ParagrapheConnexionUtilisateur">Renseignement de l'utilisateur</h2>
         <div style="text-align: center;">
             <img src="capture_coté_client\debut_connexion.PNG" class="img-thumbnail" />
@@ -65,13 +65,13 @@
                 <div align="left">Renseignez l’utilisateur (ftp) :</div>
             </p>
             
-            <button id="boutonSolutionConnexionUtilisateur" class="btn btn-warning" type="button">Afficher/cacher solution</button>
-            <p id="solutionConnexionUtilisateur"><div align="left">ftp</div></p>
-
-            <!--<textarea style="width: 90%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>-->
-            <input id="consoleConnexionUtilisateur" type="text" name="consoleConnexionUtilisateur">
+            <textarea id="consoleConnexionUtilisateur" style="width: 90%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>
+            <!--<input type="text" name="consoleConnexionUtilisateur">-->
             <p></p>
+            <p style="color: green"><div id="solutionConnexionUtilisateur" align="center">ftp</div></p>
             <button id="BoutonValidationConnexionUtilisateur" class="btn btn-primary" type="button">Entrée</button>
+            <button id="boutonSolutionConnexionUtilisateur" class="btn btn-warning" type="button">Afficher/cacher solution</button>
+
         </div>
     </div>
 
@@ -84,13 +84,12 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Renseignez le mot de passe (motdepasse) :</div></p>
             
-            <button id="boutonSolutionConnexionMdp" class="btn btn-warning" type="button">Afficher/cacher solution</button>
-            <p id="solutionConnexionMdp"><div align="left">motdepasse</div></p>
-
-            <!--<textarea style="width: 90%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>-->
-            <input id="consoleConnexionMdp" type="text" name="consoleConnexionMdp">
+            <textarea id="consoleConnexionMdp" style="width: 90%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>
+            <!--<input type="text" name="consoleConnexionMdp">-->
             <p></p>
+            <p><div id="solutionConnexionMdp" align="center">motdepasse</div></p>
             <button id="BoutonValidationConnexionMdp" class="btn btn-primary" type="button">Entrée</button>
+            <button id="boutonSolutionConnexionMdp" class="btn btn-warning" type="button">Afficher/cacher solution</button>
         </div>
     </div>
 
@@ -103,13 +102,12 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Cherchez à savoir ce qu’il y a actuellement sur le serveur ftp :</div></p>
             
-            <button id="boutonSolutionContenuServeur" class="btn btn-warning" type="button">Afficher/cacher solution</button>
-            <p id="solutionContenuServeur"><div align="left">ls</div></p>
-
-            <!--<textarea style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>-->
-            <input id="consoleContenuServeur" type="text" name="consoleContenuServeur">
+            <textarea id="consoleContenuServeur" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>
+            <!--<input type="text" name="consoleContenuServeur">-->
             <p></p>
+            <p id="solutionContenuServeur"><div id="solutionContenuServeur" align="center">ls</div></p>
             <button id="BoutonValidationContenuServeur" class="btn btn-primary" type="button">Entrée</button>
+            <button id="boutonSolutionContenuServeur" class="btn btn-warning" type="button">Afficher/cacher solution</button>
         </div>
     </div>
 
@@ -122,13 +120,12 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Déconnectez-vous du serveur ftp :</div></p>
             
-            <button id="boutonSolutionDeconnexion" class="btn btn-warning" type="button">Afficher/cacher solution</button>
-            <p id="solutionDeconnexion"><div align="left">bye</div></p>
-
-            <!--<textarea style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>-->
-            <input id="consoleDeconnexion" type="text" name="consoleDeconnexion">
+            <textarea id="consoleDeconnexion" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>
+            <!--<input type="text" name="consoleDeconnexion">-->
             <p></p>
+            <p id="solutionDeconnexion"><div id="solutionDeconnexion" align="center">bye</div></p>
             <button id="BoutonValidationDeconnexion" class="btn btn-primary" type="button">Entrée</button>
+            <button id="boutonSolutionDeconnexion" class="btn btn-warning" type="button">Afficher/cacher solution</button>
         </div>
     </div>
 
@@ -141,17 +138,16 @@
             <br/>
         </p>
         <div style="text-align: center;">
-            <img src="capture_coté_client\bye.PNG" class="img-thumbnail"/>
+            <img src="capture_coté_client\bye.PNG" class="img-thumbnail" />
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Déplacez-vous d’abord dans le dossier voulu, ici Documents :</div></p>
             
-            <button id="boutonSolutionDeplacementDossier" class="btn btn-warning" type="button">Afficher/cacher solution</button>
-            <p id="solutionDeplacementDossier"><div align="left">cd Documents</div></p>
-
-            <!--<textarea style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>-->
-            <input id="consoleDeplacementDossier" type="text" name="consoleDeplacementDossier">
+            <textarea id="consoleDeplacementDossier" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>
+            <!--<input type="text" name="consoleDeplacementDossier">-->
             <p></p>
+            <p id="solutionDeplacementDossier"><div id="solutionDeplacementDossier" align="center">cd Documents</div></p>
             <button id="BoutonValidationDeplacementDossier" class="btn btn-primary" type="button">Entrée</button>
+            <button id="boutonSolutionDeplacementDossier" class="btn btn-warning" type="button">Afficher/cacher solution</button>
         </div>
     </div>
 
@@ -164,17 +160,157 @@
             <br/>
         </p>
         <div style="text-align: center;">
-            <img src="capture_coté_client\transfert_console.PNG" class="img-thumbnail" />
+            <img src="capture_coté_client\cd_Documents.PNG" class="img-thumbnail" />
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Créez maintenant le fichier "fichier.txt" contenant le texte suivant "texte dans le fichier de transfert" :</div></p>
             
-            <button id="boutonSolutionCreationFichier" class="btn btn-warning" type="button">Afficher/cacher solution</button>
-            <p id="solutionCreationFichier"><div align="left">echo texte dans le fichier de transfert > fichier.txt</div></p>
-
-            <!--<textarea style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>-->
-            <input id="consoleCreationFichier" type="text" name="consoleCreationFichier">
+            <textarea id="consoleCreationFichier" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>
+            <!--<input type="text" name="consoleCreationFichier">-->
             <p></p>
+            <p id="solutionCreationFichier"><div id="solutionCreationFichier" align="center">echo texte dans le fichier de transfert > fichier.txt</div></p>
             <button id="BoutonValidationCreationFichier" class="btn btn-primary" type="button">Entrée</button>
+            <button id="boutonSolutionCreationFichier" class="btn btn-warning" type="button">Afficher/cacher solution</button>
+        </div>
+    </div>
+
+<br/><br/>
+
+    <div class="container-fluid" text-align="center" id="VisualisationCommandeEcritureFichier" style="display: none">
+        <p> <br/>
+            <div align="left">On obtient :</div>
+            <br/>
+        </p>
+        <div style="text-align: center;">
+            <img src="capture_coté_client\transfert_console.PNG" class="img-thumbnail" />
+            <img src="capture_coté_client\fichier_texte_graphique.PNG" class="img-thumbnail" />            
+            <!--<input type="text" style="width:1500px; height:200px;align" />-->
+            <p><br/></p>
+            <button id="BoutonValidationVisualisationCommandeEcritureFichier" class="btn btn-primary" type="button">Entrée</button>
+        </div>
+    </div>
+
+
+
+
+<br/><br/><br/><br/><br/>
+
+
+
+
+
+    <div class="container-fluid" text-align="center" id="ConnexionAdminMachineCapture" style="display: none">
+        <h2 align="center" id="ParagrapheConnexionAdminMachineCapture">Connexion en administrateur sur la Machine Capture</h2>
+        <p> <br/>
+            <div align="left">On ouvre une console sur la Machine Capture :</div>
+            <br/>
+        </p>
+        <div style="text-align: center;">
+            <img src="capture_coté_serveur\concole_vide_linux.PNG" class="img-thumbnail" />
+            <!--<input type="text" style="width:1500px; height:200px;align" />-->
+            <p><div align="left">Connectez-vous maintenant en admin :</div></p>
+            
+            <textarea id="consoleConnexionAdminMachineCapture" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>
+            <!--<input type="text" name="consoleCreationFichier">-->
+            <p></p>
+            <p id="solutionConnexionAdminMachineCapture"><div id="solutionConnexionAdminMachineCapture" align="center">sudo su</div></p>
+            <button id="BoutonValidationConnexionAdminMachineCapture" class="btn btn-primary" type="button">Entrée</button>
+            <button id="boutonSolutionConnexionAdminMachineCapture" class="btn btn-warning" type="button">Afficher/cacher solution</button>
+        </div>
+    </div>
+
+<br/><br/><br/><br/><br/>
+
+    <div class="container-fluid" text-align="center" id="EffacementEcranConsole" style="display: none">
+        <h2 align="center" id="ParagrapheEffacementEcranConsole">Effacement de l'écran de console</h2>
+        <div style="text-align: center;">
+            <img src="capture_coté_serveur\console_vide_sudo.PNG" class="img-thumbnail" />
+            <!--<input type="text" style="width:1500px; height:200px;align" />-->
+            <p><div align="left">Effacez l'écran de la console pour plus de lisibilité :</div></p>
+            
+            <textarea id="consoleEffacementEcranConsole" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>
+            <!--<input type="text" name="consoleCreationFichier">-->
+            <p></p>
+            <p id="solutionEffacementEcranConsole"><div id="solutionEffacementEcranConsole" align="center">clear</div></p>
+            <button id="BoutonValidationEffacementEcranConsole" class="btn btn-primary" type="button">Entrée</button>
+            <button id="boutonSolutionEffacementEcranConsole" class="btn btn-warning" type="button">Afficher/cacher solution</button>
+        </div>
+    </div>
+
+<br/><br/><br/><br/><br/>
+
+    <div class="container-fluid" text-align="center" id="LancementWireshark" style="display: none">
+        <h2 align="center" id="ParagrapheLancementWireshark">Lancement de Wireshark</h2>
+        <p> <br/>
+            <div align="left">Wireshark est un logiciel d'analyse du trafic réseau.</div>
+            <br/>
+        </p>
+        <div style="text-align: center;">
+            <img src="capture_coté_serveur\console_vide_sudo_2.PNG" class="img-thumbnail" />
+            <!--<input type="text" style="width:1500px; height:200px;align" />-->
+            <p><div align="left">Lancez Wireshark :</div></p>
+            
+            <textarea id="consoleLancementWireshark" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>
+            <!--<input type="text" name="consoleCreationFichier">-->
+            <p></p>
+            <p id="solutionLancementWireshark"><div id="solutionLancementWireshark" align="center">wireshark</div></p>
+            <button id="BoutonValidationLancementWireshark" class="btn btn-primary" type="button">Entrée</button>
+            <button id="boutonSolutionLancementWireshark" class="btn btn-warning" type="button">Afficher/cacher solution</button>
+        </div>
+    </div>
+
+<br/><br/><br/><br/><br/>
+
+    <div class="container-fluid" text-align="center" id="ChoixInterfaceRéseau" style="display: none">
+        <h2 align="center" id="ParagrapheChoixInterfaceRéseau">Choix de l'interface réseau</h2>
+        <p> <br/>
+            <div align="left">On choisit l'interface réseau en commun avec les deux machines victimes, à surveiller (ici enp3s0) :</div>
+            <br/>
+        </p>
+        <div style="text-align: center;">
+            <img src="capture_coté_serveur\wireshark_selection_interface_surbrillance_2.PNG" class="img-thumbnail" />
+            <!--<input type="text" style="width:1500px; height:200px;align" />-->
+            <!--<input type="text" name="consoleCreationFichier">-->
+            <p>
+                <div align="left">On double-clique sur l'interface sélectionnée.</div>
+            <br/>
+            </p>
+            <button id="BoutonValidationChoixInterfaceRéseau" class="btn btn-primary" type="button">Entrée</button>
+        </div>
+    </div>
+
+<br/><br/><br/><br/><br/>
+
+    <div class="container-fluid" text-align="center" id="Filtrage" style="display: none">
+        <h2 align="center" id="ParagrapheFiltrage">Filtrage</h2>
+        <div style="text-align: center;">
+            <img src="capture_coté_serveur\wireshark_debut.PNG" class="img-thumbnail" />
+            <!--<input type="text" style="width:1500px; height:200px;align" />-->
+            <p><div align="left">Filtrez le flux passant uniquement par la MachineClient (192.168.4.204) :</div></p>
+            
+            <textarea id="consoleFiltrage" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>
+            <!--<input type="text" name="consoleCreationFichier">-->
+            <p></p>
+            <p><div id="solutionFiltrage" align="center">ip.addr == 192.168.4.204</div></p>
+            <button id="BoutonValidationFiltrage" class="btn btn-primary" type="button">Entrée</button>
+            <button id="boutonSolutionFiltrage" class="btn btn-warning" type="button">Afficher/cacher solution</button>
+        </div>
+    </div>
+
+<br/><br/><br/><br/><br/>
+
+    <div class="container-fluid" text-align="center" id="VueCaptureMachineClient" style="display: none">
+        <h2 align="center" id="ParagrapheVueCaptureMachineClient">Vue Capture Machine Client</h2>
+        <p> <br/>
+            <div align="left">On peut voir la capture du trafic passant par la Machine Client :</div>
+            <br/>
+        </p>
+        <div style="text-align: center;">
+            <img src="capture_coté_serveur\wireshark_misenplace_filtre.PNG" class="img-thumbnail" />
+            <!--<input type="text" style="width:1500px; height:200px;align" />-->
+
+            <!--<input type="text" name="consoleCreationFichier">-->
+            <p></p>
+            <button id="BoutonValidationVueCaptureMachineClient" class="btn btn-primary" type="button">Entrée</button>
         </div>
     </div>
 
@@ -183,14 +319,152 @@
 
 
 
+<br/><br/><br/><br/><br/>
 
 
 
 
+    <div class="container-fluid" text-align="center" id="Connexion2Ftp" style="display: none">
+        <h2 align="center" id="ParagrapheConnexion2Ftp">Reconnexion au serveur ftp (Etape 1)</h2>
+        <p> <br/>
+            <div align="left">On reprend la console sur la Machine Client :</div>
+            <br/>
+        </p>
+        <div style="text-align: center;">
+            <img src="capture_coté_client\transfert_console.PNG" class="img-thumbnail" />
+            <!--<input type="text" style="width:1500px; height:200px;align" />-->
+            <p><div align="left">Reconnectez-vous au serveur ftp (192.168.4.204) :</div></p>
+            
+            <textarea id="consoleConnexion2Ftp" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>
+            <!--<input type="text" name="consoleCreationFichier">-->
+            <p></p>
+            <p><div id="solutionConnexion2Ftp" align="center">ftp 192.168.4.206</div></p>
+            <button id="BoutonValidationConnexion2Ftp" class="btn btn-primary" type="button">Entrée</button>
+            <button id="boutonSolutionConnexion2Ftp" class="btn btn-warning" type="button">Afficher/cacher solution</button>
+        </div>
+    </div>
 
+<br/><br/><br/><br/><br/>
 
+    <div class="container-fluid" text-align="center" id="Connexion2Utilisateur" style="display: none">
+        <h2 align="center" id="ParagrapheConnexion2Utilisateur">Reconnexion au serveur ftp (Etape 2)</h2>
+        <div style="text-align: center;">
+            <img src="capture_coté_client\deuxieme_connexion.PNG" class="img-thumbnail" />
+            <!--<input type="text" style="width:1500px; height:200px;align" />-->
+            <p><div align="left">Renseignez l'utilisateur (ftp) :</div></p>
+            
+            <textarea id="consoleConnexion2Utilisateur" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>
+            <!--<input type="text" name="consoleCreationFichier">-->
+            <p></p>
+            <p><div id="solutionConnexion2Utilisateur" align="center"></div></p>
+            <button id="BoutonValidationConnexion2Utilisateur" class="btn btn-primary" type="button">Entrée</button>
+            <button id="boutonSolutionConnexion2Utilisateur" class="btn btn-warning" type="button">Afficher/cacher solution</button>
+        </div>
+    </div>
 
+<br/><br/><br/><br/><br/>
 
+    <div class="container-fluid" text-align="center" id="Connexion2Mdp" style="display: none">
+        <h2 align="center" id="ParagrapheConnexion2Mdp">Reconnexion au serveur ftp (Etape 3)</h2>
+        <div style="text-align: center;">
+            <img src="capture_coté_client\deuxieme_connexion_login.PNG" class="img-thumbnail" />
+            <!--<input type="text" style="width:1500px; height:200px;align" />-->
+            <p><div align="left">Renseignez le mot de passe (motdepasse) :</div></p>
+            
+            <textarea id="consoleConnexion2Mdp" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>
+            <!--<input type="text" name="consoleCreationFichier">-->
+            <p></p>
+            <p><div id="solutionConnexion2Mdp" align="center">motdepasse</div></p>
+            <button id="BoutonValidationConnexion2Mdp" class="btn btn-primary" type="button">Entrée</button>
+            <button id="boutonSolutionConnexion2Mdp" class="btn btn-warning" type="button">Afficher/cacher solution</button>
+        </div>
+    </div>
 
+<br/><br/><br/><br/><br/>
+
+    <div class="container-fluid" text-align="center" id="DepotFichier" style="display: none">
+        <h2 align="center" id="ParagrapheDepotFichier">Dépôt du fichier sur le serveur ftp</h2>
+        <div style="text-align: center;">
+            <img src="capture_coté_client\deuxieme_connexion_mdp.PNG" class="img-thumbnail" />
+            <!--<input type="text" style="width:1500px; height:200px;align" />-->
+            <p><div align="left">Le dossier courant (Documents) est bien celui où se trouve notre fichier transfert.txt. Déposer ce fichier sur le serveur ftp :</div></p>
+            
+            <textarea id="consoleDepotFichier" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>
+            <!--<input type="text" name="consoleCreationFichier">-->
+            <p></p>
+            <p id="solutionDepotFichier"><div id="solutionDepotFichier" align="center">put transfert.txt</div></p>
+            <button id="BoutonValidationDepotFichier" class="btn btn-primary" type="button">Entrée</button>
+            <button id="boutonSolutionDepotFichier" class="btn btn-warning" type="button">Afficher/cacher solution</button>
+        </div>
+    </div>
+
+<br/><br/><br/><br/><br/>
+
+    <div class="container-fluid" text-align="center" id="ContenuServeur2" style="display: none">
+        <h2 align="center" id="ParagrapheContenuServeur2">Visualisation contenu serveur</h2>
+        <div style="text-align: center;">
+            <img src="capture_coté_client\put_transfert.PNG" class="img-thumbnail" />
+            <!--<input type="text" style="width:1500px; height:200px;align" />-->
+            <p><div align="left">Vérifiez ce qu’il y a actuellement sur le serveur ftp :</div></p>
+            
+            <textarea id="consoleContenuServeur2" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>
+            <!--<input type="text" name="consoleContenuServeur">-->
+            <p></p>
+            <p id="solutionContenuServeur2"><div id="solutionContenuServeur2" align="center">ls</div></p>
+            <button id="BoutonValidationContenuServeur2" class="btn btn-primary" type="button">Entrée</button>
+            <button id="boutonSolutionContenuServeur2" class="btn btn-warning" type="button">Afficher/cacher solution</button>
+        </div>
+    </div>
+
+<br/><br/><br/><br/><br/>
+
+    <div class="container-fluid" text-align="center" id="ContenuServeurWeb" style="display: none">
+        <h2 align="center" id="ParagrapheContenuServeurWeb">Visualisation contenu serveur par interface web</h2>
+        <div style="text-align: center;">
+            <img src="capture_coté_client\ls_apres_transfert.PNG" class="img-thumbnail" />
+            <!--<input type="text" style="width:1500px; height:200px;align" />-->
+
+            <p>
+                <div align="left">On peut aussi visualiser le contenu du serveur par une interface web accessible à l’adresse du serveur (http://192.168.4.206) :</div>
+                <br/>
+                <img src="capture_coté_client\ls_apres_transfert_graphique.PNG" class="img-thumbnail" />
+            </p>
+            
+            <button id="BoutonValidationContenuServeurWeb" class="btn btn-primary" type="button">Entrée</button>
+        </div>
+    </div>
+
+<br/><br/><br/><br/><br/>
+
+    <div class="container-fluid" text-align="center" id="EtudeCaptureWireshark" style="display: none">
+        <h2 align="center" id="ParagrapheEtudeCaptureWireshark">Etude de la capture Wireshark</h2>
+        <div style="text-align: center;">
+            <!--<input type="text" style="width:1500px; height:200px;align" />-->
+            <p>
+                <div align="left">Etudions la capture Wireshark de la Machine Capture.</div>
+                <br/>
+                <div align="left">On visualise le trafic de la connexion :</div>
+                <br/>
+                <img src="capture_coté_serveur\wireshark_connexion.PNG" class="img-thumbnail" />
+                <br/>
+                <br/>
+                <div align="left">En suivant le flux TCP du paquet sélectionné, on obtient :</div>
+                <br/>
+                <img src="capture_coté_serveur\wireshark_connexion_detaille.PNG" class="img-thumbnail" />
+                <br/><br/>
+                <div align="left">On a donc capturé les identifiant et mot de passe nécessaires à la connexion.</div>
+                <br/>
+                <div align="left">Visualisons maintenant le trafic du dépôt :</div>
+                <br/>
+                <div align="left">En suivant le flux TCP du paquet sélectionné, on obtient :</div>
+                <br/>
+                <img src="capture_coté_serveur\wireshark_transfert_contenu.PNG" class="img-thumbnail" />
+                <br/><br/>
+                <div align="left">On a donc capturé le contenu du fichier transféré.</div>
+                <br/>
+            </p>
+            <button id="BoutonValidationEtudeCaptureWireshark" class="btn btn-primary" type="button">Fin</button>
+        </div>
+    </div>
 </body>
 </html>
