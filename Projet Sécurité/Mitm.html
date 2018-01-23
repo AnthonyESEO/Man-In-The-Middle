@@ -8,10 +8,10 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-    <!--<script src="ManInTheMiddle.js"></script>-->
+    <script src="ManInTheMiddle.js"></script>
 
     
-<!--    <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+    <!--<link rel="stylesheet" type="text/css" href="bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="bootstrap-responsive.css" />
     <link rel="stylesheet" type="text/css" href="bootstrap-responsive.min.css" />-->
@@ -44,7 +44,7 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Tapez la commande pour se connecter au serveur ftp (MachineServeur : 192.168.4.206) :</div></p>
             
-            <textarea id="consoleConnexionFtp" style="width: 90%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>
+            <input id="consoleConnexionFtp" style="width: 90%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></input>
             <!--<input type="text" name="consoleConnexionFtp">-->
             <p></p>
             <p><div align="center" id="solutionConnexionFtp" style="display: none">ftp 192.168.4.206</div></p>
@@ -65,7 +65,7 @@
                 <div align="left">Renseignez l’utilisateur (ftp) :</div>
             </p>
             
-            <textarea id="consoleConnexionUtilisateur" style="width: 90%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>
+            <input id="consoleConnexionUtilisateur" style="width: 90%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></input>
             <!--<input type="text" name="consoleConnexionUtilisateur">-->
             <p></p>
             <p style="color: green"><div id="solutionConnexionUtilisateur" align="center" style="display: none">ftp</div></p>
@@ -84,7 +84,7 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Renseignez le mot de passe (motdepasse) :</div></p>
             
-            <textarea id="consoleConnexionMdp" style="width: 90%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>
+            <input id="consoleConnexionMdp" style="width: 90%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></input>
             <!--<input type="text" name="consoleConnexionMdp">-->
             <p></p>
             <p><div id="solutionConnexionMdp" align="center" style="display: none">motdepasse</div></p>
@@ -102,7 +102,7 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Cherchez à savoir ce qu’il y a actuellement sur le serveur ftp :</div></p>
             
-            <textarea id="consoleContenuServeur" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>
+            <input id="consoleContenuServeur" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></input>
             <!--<input type="text" name="consoleContenuServeur">-->
             <p></p>
             <p><div id="solutionContenuServeur" align="center" style="display: none">ls</div></p>
@@ -120,7 +120,7 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Déconnectez-vous du serveur ftp :</div></p>
             
-            <textarea id="consoleDeconnexion" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>
+            <input id="consoleDeconnexion" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></input>
             <!--<input type="text" name="consoleDeconnexion">-->
             <p></p>
             <p><div id="solutionDeconnexion" align="center" style="display: none">bye</div></p>
@@ -142,7 +142,7 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Déplacez-vous d’abord dans le dossier voulu, ici Documents :</div></p>
             
-            <textarea id="consoleDeplacementDossier" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>
+            <input id="consoleDeplacementDossier" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></input>
             <!--<input type="text" name="consoleDeplacementDossier">-->
             <p></p>
             <p><div id="solutionDeplacementDossier" align="center" style="display: none">cd Documents</div></p>
@@ -164,7 +164,7 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Créez maintenant le fichier "fichier.txt" contenant le texte suivant "texte dans le fichier de transfert" :</div></p>
             
-            <textarea id="consoleCreationFichier" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>
+            <input id="consoleCreationFichier" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></input>
             <!--<input type="text" name="consoleCreationFichier">-->
             <p></p>
             <p><div id="solutionCreationFichier" align="center" style="display: none">echo texte dans le fichier de transfert > fichier.txt</div></p>
@@ -209,7 +209,7 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Connectez-vous maintenant en admin :</div></p>
             
-            <textarea id="consoleConnexionAdminMachineCapture" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>
+            <input id="consoleConnexionAdminMachineCapture" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></input>
             <!--<input type="text" name="consoleCreationFichier">-->
             <p></p>
             <p><div id="solutionConnexionAdminMachineCapture" align="center" style="display: none">sudo su</div></p>
@@ -227,7 +227,7 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Effacez l'écran de la console pour plus de lisibilité :</div></p>
             
-            <textarea id="consoleEffacementEcranConsole" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>
+            <input id="consoleEffacementEcranConsole" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></input>
             <!--<input type="text" name="consoleCreationFichier">-->
             <p></p>
             <p><div id="solutionEffacementEcranConsole" align="center" style="display: none">clear</div></p>
@@ -249,7 +249,7 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Lancez Wireshark :</div></p>
             
-            <textarea id="consoleLancementWireshark" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>
+            <input id="consoleLancementWireshark" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></input>
             <!--<input type="text" name="consoleCreationFichier">-->
             <p></p>
             <p><div id="solutionLancementWireshark" align="center" style="display: none">wireshark</div></p>
@@ -267,7 +267,7 @@
             <br/>
         </p>
         <div style="text-align: center;">
-            <img src="capture_coté_serveur\wireshark_selection_interface_surbrillance_2.PNG" class="img-thumbnail" />
+            <img src="capture_coté_serveur\wireshark_selection_interface_surbrillance.PNG" class="img-thumbnail" />
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <!--<input type="text" name="consoleCreationFichier">-->
             <p>
@@ -287,7 +287,7 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Filtrez le flux passant uniquement par la MachineClient (192.168.4.204) :</div></p>
             
-            <textarea id="consoleFiltrage" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>
+            <input id="consoleFiltrage" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></input>
             <!--<input type="text" name="consoleCreationFichier">-->
             <p></p>
             <p><div id="solutionFiltrage" align="center" style="display: none">ip.addr == 192.168.4.204</div></p>
@@ -335,7 +335,7 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Reconnectez-vous au serveur ftp (192.168.4.204) :</div></p>
             
-            <textarea id="consoleConnexion2Ftp" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>
+            <input id="consoleConnexion2Ftp" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></input>
             <!--<input type="text" name="consoleCreationFichier">-->
             <p></p>
             <p><div id="solutionConnexion2Ftp" align="center" style="display: none">ftp 192.168.4.206</div></p>
@@ -353,7 +353,7 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Renseignez l'utilisateur (ftp) :</div></p>
             
-            <textarea id="consoleConnexion2Utilisateur" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>
+            <input id="consoleConnexion2Utilisateur" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></input>
             <!--<input type="text" name="consoleCreationFichier">-->
             <p></p>
             <p><div id="solutionConnexion2Utilisateur" align="center" style="display: none"></div></p>
@@ -371,7 +371,7 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Renseignez le mot de passe (motdepasse) :</div></p>
             
-            <textarea id="consoleConnexion2Mdp" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>
+            <input id="consoleConnexion2Mdp" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></input>
             <!--<input type="text" name="consoleCreationFichier">-->
             <p></p>
             <p><div id="solutionConnexion2Mdp" align="center" style="display: none">motdepasse</div></p>
@@ -389,7 +389,7 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Le dossier courant (Documents) est bien celui où se trouve notre fichier transfert.txt. Déposer ce fichier sur le serveur ftp :</div></p>
             
-            <textarea id="consoleDepotFichier" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>
+            <input id="consoleDepotFichier" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></input>
             <!--<input type="text" name="consoleCreationFichier">-->
             <p></p>
             <p><div id="solutionDepotFichier" align="center" style="display: none">put transfert.txt</div></p>
@@ -407,7 +407,7 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Vérifiez ce qu’il y a actuellement sur le serveur ftp :</div></p>
             
-            <textarea id="consoleContenuServeur2" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></textarea>
+            <input id="consoleContenuServeur2" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></input>
             <!--<input type="text" name="consoleContenuServeur">-->
             <p></p>
             <p><div id="solutionContenuServeur2" align="center" style="display: none">ls</div></p>
@@ -467,15 +467,16 @@
         </div>
     </div>
 
-    <br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/>
 
-    <div class="container-fluid" text-align="center" id="Solution" style="display: none">
+    <div class="container-fluid" text-align="center" id="Solution">
         <h2 align="center" id="ParagrapheSolution">Solution au problème</h2>
         <div style="text-align: center;">
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p>
-            <div align="left">Pour éviter qu'un opérateur tiers puisse récupérer la connexion ainsi que le contenu des échanges, on peut utiliser un certificat. Pour cela, on édite les paramètres du serveur Mozilla, section "Enable FTP over TLS settings" :</div>
+            <div align="left">Pour éviter qu'un opérateur tiers puisse récupérer la connexion ainsi que le contenu des échanges, on peut utiliser un certificat pour chiffrer le trafic. Pour cela, on édite les paramètres du serveur Mozilla, section "Enable FTP over TLS settings" :</div>
             <br/>
+            <img src="capture_coté_serveur\Certificat_serveur.PNG" class="img-thumbnail" />
             </p>
             <button id="BoutonValidationEtudeCaptureWireshark" class="btn btn-primary" type="button">Fin</button>
         </div>
