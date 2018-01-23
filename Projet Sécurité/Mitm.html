@@ -47,7 +47,7 @@
             <!--<input type="text" name="consoleConnexionFtp">-->
             <p></p>
             <p><div align="center" id="solutionConnexionFtp" style="display: none">ftp 192.168.4.206</div></p>
-            <button id="BoutonValidationConnexionFtp" class="btn btn-primary" type="button">Valider</button>
+            <a id="BoutonValidationConnexionFtp" href="#ConnexionUtilisateur" class="btn btn-primary" type="button">Valider</a>
             <button id="boutonSolutionConnexionFtp" class="btn btn-warning" type="button">Afficher solution</button>
         </div>
     </div>
@@ -65,8 +65,8 @@
             <input id="consoleConnexionUtilisateur" style="width: 90%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></input>
             <!--<input type="text" name="consoleConnexionUtilisateur">-->
             <p></p>
-            <p style="color: green"><div id="solutionConnexionUtilisateur" align="center" style="display: none">ftp</div></p>
-            <button id="BoutonValidationConnexionUtilisateur" class="btn btn-primary" type="button">Valider</button>
+            <p><div id="solutionConnexionUtilisateur" align="center" style="display: none">ftp</div></p>
+            <a id="BoutonValidationConnexionUtilisateur" href="#ConnexionMdp" class="btn btn-primary" type="button">Valider</a>
             <button id="boutonSolutionConnexionUtilisateur" class="btn btn-warning" type="button">Afficher solution</button>
         </div>
     </div>
@@ -83,7 +83,7 @@
             <!--<input type="text" name="consoleConnexionMdp">-->
             <p></p>
             <p><div id="solutionConnexionMdp" align="center" style="display: none">motdepasse</div></p>
-            <button id="BoutonValidationConnexionMdp" class="btn btn-primary" type="button">Valider</button>
+            <a id="BoutonValidationConnexionMdp" href="#ContenuServeur" class="btn btn-primary" type="button">Valider</a>
             <button id="boutonSolutionConnexionMdp" class="btn btn-warning" type="button">Afficher solution</button>
         </div>
     </div>
@@ -100,7 +100,7 @@
             <!--<input type="text" name="consoleContenuServeur">-->
             <p></p>
             <p><div id="solutionContenuServeur" align="center" style="display: none">ls</div></p>
-            <button id="BoutonValidationContenuServeur" class="btn btn-primary" type="button">Valider</button>
+            <a id="BoutonValidationContenuServeur" href="#Deconnexion" class="btn btn-primary" type="button">Valider</a>
             <button id="boutonSolutionContenuServeur" class="btn btn-warning" type="button">Afficher solution</button>
         </div>
     </div>
@@ -117,7 +117,7 @@
             <!--<input type="text" name="consoleDeconnexion">-->
             <p></p>
             <p><div id="solutionDeconnexion" align="center" style="display: none">bye</div></p>
-            <button id="BoutonValidationDeconnexion" class="btn btn-primary" type="button">Valider</button>
+            <a id="BoutonValidationDeconnexion" href="#DeplacementDossier" class="btn btn-primary" type="button">Valider</a>
             <button id="boutonSolutionDeconnexion" class="btn btn-warning" type="button">Afficher solution</button>
         </div>
     </div>
@@ -138,7 +138,7 @@
             <!--<input type="text" name="consoleDeplacementDossier">-->
             <p></p>
             <p><div id="solutionDeplacementDossier" align="center" style="display: none">cd Documents</div></p>
-            <button id="BoutonValidationDeplacementDossier" class="btn btn-primary" type="button">Valider</button>
+            <a id="BoutonValidationDeplacementDossier" href="#CreationFichier" class="btn btn-primary" type="button">Valider</a>
             <button id="boutonSolutionDeplacementDossier" class="btn btn-warning" type="button">Afficher solution</button>
         </div>
     </div>
@@ -159,7 +159,7 @@
             <!--<input type="text" name="consoleCreationFichier">-->
             <p></p>
             <p><div id="solutionCreationFichier" align="center" style="display: none">echo texte dans le fichier de transfert > fichier.txt</div></p>
-            <button id="BoutonValidationCreationFichier" class="btn btn-primary" type="button">Valider</button>
+            <a id="BoutonValidationCreationFichier" href="#VisualisationCommandeEcritureFichier" class="btn btn-primary" type="button">Valider</a>
             <button id="boutonSolutionCreationFichier" class="btn btn-warning" type="button">Afficher solution</button>
         </div>
     </div>
@@ -174,7 +174,7 @@
             <img src="capture_coté_client\fichier_texte_graphique.PNG" class="img-thumbnail" />            
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><br/></p>
-            <button id="BoutonValidationVisualisationCommandeEcritureFichier" class="btn btn-primary" type="button">Valider</button>
+            <a id="BoutonValidationVisualisationCommandeEcritureFichier" href="#ConnexionAdminMachineCapture" class="btn btn-primary" type="button">Valider</a>
         </div>
     </div>
 
@@ -201,7 +201,7 @@
             <!--<input type="text" name="consoleCreationFichier">-->
             <p></p>
             <p><div id="solutionConnexionAdminMachineCapture" align="center" style="display: none">sudo su</div></p>
-            <button id="BoutonValidationConnexionAdminMachineCapture" class="btn btn-primary" type="button">Valider</button>
+            <a id="BoutonValidationConnexionAdminMachineCapture" href="#EffacementEcranConsole" class="btn btn-primary" type="button">Valider</a>
             <button id="boutonSolutionConnexionAdminMachineCapture" class="btn btn-warning" type="button">Afficher solution</button>
         </div>
     </div>
@@ -218,7 +218,7 @@
             <!--<input type="text" name="consoleCreationFichier">-->
             <p></p>
             <p><div id="solutionEffacementEcranConsole" align="center" style="display: none">clear</div></p>
-            <button id="BoutonValidationEffacementEcranConsole" class="btn btn-primary" type="button">Valider</button>
+            <a id="BoutonValidationEffacementEcranConsole" href="#LancementWireshark" class="btn btn-primary" type="button">Valider</a>
             <button id="boutonSolutionEffacementEcranConsole" class="btn btn-warning" type="button">Afficher solution</button>
         </div>
     </div>
@@ -239,7 +239,7 @@
             <!--<input type="text" name="consoleCreationFichier">-->
             <p></p>
             <p><div id="solutionLancementWireshark" align="center" style="display: none">wireshark</div></p>
-            <button id="BoutonValidationLancementWireshark" class="btn btn-primary" type="button">Valider</button>
+            <a id="BoutonValidationLancementWireshark" href="#ChoixInterfaceRéseau" class="btn btn-primary" type="button">Valider</a>
             <button id="boutonSolutionLancementWireshark" class="btn btn-warning" type="button">Afficher solution</button>
         </div>
     </div>
@@ -259,7 +259,7 @@
                 <div align="left">On double-clique sur l'interface sélectionnée.</div>
             <br/>
             </p>
-            <button id="BoutonValidationChoixInterfaceRéseau" class="btn btn-primary" type="button">Valider</button>
+            <a id="BoutonValidationChoixInterfaceRéseau" href="#Filtrage" class="btn btn-primary" type="button">Valider</a>
         </div>
     </div>
 
@@ -275,7 +275,7 @@
             <!--<input type="text" name="consoleCreationFichier">-->
             <p></p>
             <p><div id="solutionFiltrage" align="center" style="display: none">ip.addr == 192.168.4.204</div></p>
-            <button id="BoutonValidationFiltrage" class="btn btn-primary" type="button">Valider</button>
+            <a id="BoutonValidationFiltrage" href="#VueCaptureMachineClient" class="btn btn-primary" type="button">Valider</a>
             <button id="boutonSolutionFiltrage" class="btn btn-warning" type="button">Afficher solution</button>
         </div>
     </div>
@@ -293,7 +293,7 @@
 
             <!--<input type="text" name="consoleCreationFichier">-->
             <p></p>
-            <button id="BoutonValidationVueCaptureMachineClient" class="btn btn-primary" type="button">Valider</button>
+            <a id="BoutonValidationVueCaptureMachineClient" href="#Connexion2Ftp" class="btn btn-primary" type="button">Valider</a>
         </div>
     </div>
 
@@ -320,7 +320,7 @@
             <!--<input type="text" name="consoleCreationFichier">-->
             <p></p>
             <p><div id="solutionConnexion2Ftp" align="center" style="display: none">ftp 192.168.4.206</div></p>
-            <button id="BoutonValidationConnexion2Ftp" class="btn btn-primary" type="button">Valider</button>
+            <a id="BoutonValidationConnexion2Ftp" href="#Connexion2Utilisateur" class="btn btn-primary" type="button">Valider</a>
             <button id="boutonSolutionConnexion2Ftp" class="btn btn-warning" type="button">Afficher solution</button>
         </div>
     </div>
@@ -337,7 +337,7 @@
             <!--<input type="text" name="consoleCreationFichier">-->
             <p></p>
             <p><div id="solutionConnexion2Utilisateur" align="center" style="display: none"></div></p>
-            <button id="BoutonValidationConnexion2Utilisateur" class="btn btn-primary" type="button">Valider</button>
+            <a id="BoutonValidationConnexion2Utilisateur" href="#Connexion2Mdp" class="btn btn-primary" type="button">Valider</a>
             <button id="boutonSolutionConnexion2Utilisateur" class="btn btn-warning" type="button">Afficher solution</button>
         </div>
     </div>
@@ -354,7 +354,7 @@
             <!--<input type="text" name="consoleCreationFichier">-->
             <p></p>
             <p><div id="solutionConnexion2Mdp" align="center" style="display: none">motdepasse</div></p>
-            <button id="BoutonValidationConnexion2Mdp" class="btn btn-primary" type="button">Valider</button>
+            <a id="BoutonValidationConnexion2Mdp" href="#DepotFichier" class="btn btn-primary" type="button">Valider</a>
             <button id="boutonSolutionConnexion2Mdp" class="btn btn-warning" type="button">Afficher solution</button>
         </div>
     </div>
@@ -371,7 +371,7 @@
             <!--<input type="text" name="consoleCreationFichier">-->
             <p></p>
             <p><div id="solutionDepotFichier" align="center" style="display: none">put transfert.txt</div></p>
-            <button id="BoutonValidationDepotFichier" class="btn btn-primary" type="button">Valider</button>
+            <a id="BoutonValidationDepotFichier" href="#ContenuServeur2" class="btn btn-primary" type="button">Valider</a>
             <button id="boutonSolutionDepotFichier" class="btn btn-warning" type="button">Afficher solution</button>
         </div>
     </div>
@@ -388,7 +388,7 @@
             <!--<input type="text" name="consoleContenuServeur">-->
             <p></p>
             <p><div id="solutionContenuServeur2" align="center" style="display: none">ls</div></p>
-            <button id="BoutonValidationContenuServeur2" class="btn btn-primary" type="button">Valider</button>
+            <a id="BoutonValidationContenuServeur2" href="#ContenuServeurWeb" class="btn btn-primary" type="button">Valider</a>
             <button id="boutonSolutionContenuServeur2" class="btn btn-warning" type="button">Afficher solution</button>
         </div>
     </div>
@@ -406,7 +406,7 @@
                 <img src="capture_coté_client\ls_apres_transfert_graphique.PNG" class="img-thumbnail" />
             </p>
             
-            <button id="BoutonValidationContenuServeurWeb" class="btn btn-primary" type="button">Valider</button>
+            <a id="BoutonValidationContenuServeurWeb" href="#EtudeCaptureWireshark" class="btn btn-primary" type="button">Valider</a>
         </div>
     </div>
 
@@ -438,7 +438,7 @@
                 <div align="left">On a donc capturé le contenu du fichier transféré.</div>
                 <br/>
             </p>
-            <button id="BoutonValidationEtudeCaptureWireshark" class="btn btn-primary" type="button">Fin</button>
+            <a id="BoutonValidationEtudeCaptureWireshark" href="#Solution" class="btn btn-primary" type="button">Fin</a>
         </div>
     </div>
 
@@ -452,7 +452,7 @@
             <br/>
             <img src="capture_coté_serveur\Certificat_serveur.PNG" class="img-thumbnail" />
             </p>
-            <button id="BoutonValidationEtudeCaptureWireshark" class="btn btn-primary" type="button">Fin</button>
+            <button id="BoutonValidationEtudeCaptureWireshark2" class="btn btn-primary" type="button">Fin</button>
         </div>
     </div>
 

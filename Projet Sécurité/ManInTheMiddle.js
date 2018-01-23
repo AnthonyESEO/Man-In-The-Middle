@@ -13,6 +13,12 @@ function valider(idInputDepart, idBoutonDepart, idConteneurDestination, reponse)
             console.log("FAUX");
     })
 
+    inputDepart.addEventListener("keypress", function (e) {
+        if(e.keyCode == 13){
+            boutonDepart.click();
+        }
+    })
+
 }
 
 function valider2(boutonDepart, containerArrive) {
@@ -92,4 +98,7 @@ window.onload=function() {
     aide("boutonSolutionContenuServeur2", "solutionContenuServeur2");
 
     valider2("BoutonValidationContenuServeurWeb","EtudeCaptureWireshark");
+
+    valider2("BoutonValidationEtudeCaptureWireshark","Solution");
+
 };
