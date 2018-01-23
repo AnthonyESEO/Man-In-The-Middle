@@ -60,58 +60,58 @@ window.onload=function() {
 
     valider2("commencer","ConnexionFtp");
 
-    valider("consoleConnexionFtp", "BoutonValidationConnexionFtp", "ConnexionUtilisateur", "test");
+    valider("consoleConnexionFtp", "BoutonValidationConnexionFtp", "ConnexionUtilisateur", "ftp 192.168.4.206");
     aide("boutonSolutionConnexionFtp","solutionConnexionFtp");
 
-    valider("consoleConnexionUtilisateur", "BoutonValidationConnexionUtilisateur", "ConnexionMdp", "test");
+    valider("consoleConnexionUtilisateur", "BoutonValidationConnexionUtilisateur", "ConnexionMdp", "ftp");
     aide("boutonSolutionConnexionUtilisateur","solutionConnexionUtilisateur");
 
-    valider("consoleConnexionMdp", "BoutonValidationConnexionMdp", "ContenuServeur", "test");
+    valider("consoleConnexionMdp", "BoutonValidationConnexionMdp", "ContenuServeur", "motdepasse");
     aide("boutonSolutionConnexionMdp","solutionConnexionMdp");
 
-    valider("consoleContenuServeur", "BoutonValidationContenuServeur", "Deconnexion", "test");
+    valider("consoleContenuServeur", "BoutonValidationContenuServeur", "Deconnexion", "ls");
     aide("boutonSolutionContenuServeur","solutionContenuServeur");
 
-    valider("consoleDeconnexion", "BoutonValidationDeconnexion", "DeplacementDossier", "test");
+    valider("consoleDeconnexion", "BoutonValidationDeconnexion", "DeplacementDossier", "bye");
     aide("boutonSolutionDeconnexion","solutionDeconnexion");
 
-    valider("consoleDeplacementDossier", "BoutonValidationDeplacementDossier", "CreationFichier", "test");
+    valider("consoleDeplacementDossier", "BoutonValidationDeplacementDossier", "CreationFichier", "cd Documents");
     aide("boutonSolutionDeplacementDossier","solutionDeplacementDossier");
 
-    valider("consoleCreationFichier", "BoutonValidationCreationFichier", "VisualisationCommandeEcritureFichier", "test");
+    valider("consoleCreationFichier", "BoutonValidationCreationFichier", "VisualisationCommandeEcritureFichier", "echo texte dans le fichier de transfert > fichier.txt");
     aide("boutonSolutionCreationFichier","solutionCreationFichier");
 
     valider2("BoutonValidationVisualisationCommandeEcritureFichier","ConnexionAdminMachineCapture");
 
-    valider("consoleConnexionAdminMachineCapture", "BoutonValidationConnexionAdminMachineCapture", "EffacementEcranConsole", "test");
+    valider("consoleConnexionAdminMachineCapture", "BoutonValidationConnexionAdminMachineCapture", "EffacementEcranConsole", "sudo su");
     aide("boutonSolutionConnexionAdminMachineCapture","solutionConnexionAdminMachineCapture");
 
-    valider("consoleEffacementEcranConsole", "BoutonValidationEffacementEcranConsole", "LancementWireshark", "test");
+    valider("consoleEffacementEcranConsole", "BoutonValidationEffacementEcranConsole", "LancementWireshark", "clear");
     aide("boutonSolutionEffacementEcranConsole","solutionEffacementEcranConsole");
 
-    valider("consoleLancementWireshark", "BoutonValidationLancementWireshark", "ChoixInterfaceRéseau", "test");
+    valider("consoleLancementWireshark", "BoutonValidationLancementWireshark", "ChoixInterfaceRéseau", "wireshark");
     aide("boutonSolutionLancementWireshark","solutionLancementWireshark");
 
     valider2("BoutonValidationChoixInterfaceRéseau", "Filtrage");
 
-    valider("consoleFiltrage", "BoutonValidationFiltrage", "VueCaptureMachineClient", "test");
+    valider("consoleFiltrage", "BoutonValidationFiltrage", "VueCaptureMachineClient", "ip.addr == 192.168.4.204");
     aide("boutonSolutionFiltrage","solutionFiltrage");
 
     valider2("BoutonValidationVueCaptureMachineClient", "Connexion2Ftp");
 
-    valider("consoleConnexion2Ftp", "BoutonValidationConnexion2Ftp", "Connexion2Utilisateur", "test");
+    valider("consoleConnexion2Ftp", "BoutonValidationConnexion2Ftp", "Connexion2Utilisateur", "ftp 192.168.4.206");
     aide("boutonSolutionConnexion2Ftp","solutionConnexion2Ftp");
 
-    valider("consoleConnexion2Utilisateur","BoutonValidationConnexion2Utilisateur","Connexion2Mdp", "test");
+    valider("consoleConnexion2Utilisateur","BoutonValidationConnexion2Utilisateur","Connexion2Mdp", "ftp");
     aide("boutonSolutionConnexion2Utilisateur", "solutionConnexion2Utilisateur");
 
-    valider("consoleConnexion2Mdp","BoutonValidationConnexion2Mdp","DepotFichier", "test");
+    valider("consoleConnexion2Mdp","BoutonValidationConnexion2Mdp","DepotFichier", "motdepasse");
     aide("boutonSolutionConnexion2Mdp", "solutionConnexion2Mdp");
 
-    valider("consoleDepotFichier","BoutonValidationDepotFichier","ContenuServeur2", "test");
+    valider("consoleDepotFichier","BoutonValidationDepotFichier","ContenuServeur2", "put transfert.txt");
     aide("boutonSolutionDepotFichier", "solutionDepotFichier");
 
-    valider("consoleContenuServeur2","BoutonValidationContenuServeur2","ContenuServeurWeb", "test");
+    valider("consoleContenuServeur2","BoutonValidationContenuServeur2","ContenuServeurWeb", "ls");
     aide("boutonSolutionContenuServeur2", "solutionContenuServeur2");
 
     valider2("BoutonValidationContenuServeurWeb","EtudeCaptureWireshark");
