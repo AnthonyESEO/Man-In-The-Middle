@@ -9,8 +9,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
     <script src="ManInTheMiddle.js"></script>
+    <link rel="stylesheet" href="Input.css" />
 
-    
+
     <!--<link rel="stylesheet" type="text/css" href="bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="bootstrap-responsive.css" />
@@ -43,7 +44,7 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Tapez la commande pour se connecter au serveur ftp (MachineServeur : 192.168.4.206) :</div></p>
             
-            <input id="consoleConnexionFtp" style="width: 90%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></input>
+            <input id="consoleConnexionFtp"></input>
             <!--<input type="text" name="consoleConnexionFtp">-->
             <p></p>
             <p><div align="center" id="solutionConnexionFtp" style="display: none">ftp 192.168.4.206</div></p>
@@ -62,7 +63,7 @@
                 <div align="left">Renseignez l’utilisateur (ftp) :</div>
             </p>
             
-            <input id="consoleConnexionUtilisateur" style="width: 90%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></input>
+            <input id="consoleConnexionUtilisateur" ></input>
             <!--<input type="text" name="consoleConnexionUtilisateur">-->
             <p></p>
             <p><div id="solutionConnexionUtilisateur" align="center" style="display: none">ftp</div></p>
@@ -79,7 +80,7 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Renseignez le mot de passe (motdepasse) :</div></p>
             
-            <input id="consoleConnexionMdp" style="width: 90%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></input>
+            <input id="consoleConnexionMdp"></input>
             <!--<input type="text" name="consoleConnexionMdp">-->
             <p></p>
             <p><div id="solutionConnexionMdp" align="center" style="display: none">motdepasse</div></p>
@@ -96,7 +97,7 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Cherchez à savoir ce qu’il y a actuellement sur le serveur ftp :</div></p>
             
-            <input id="consoleContenuServeur" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></input>
+            <input id="consoleContenuServeur"></input>
             <!--<input type="text" name="consoleContenuServeur">-->
             <p></p>
             <p><div id="solutionContenuServeur" align="center" style="display: none">ls</div></p>
@@ -113,7 +114,7 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Déconnectez-vous du serveur ftp :</div></p>
             
-            <input id="consoleDeconnexion" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></input>
+            <input id="consoleDeconnexion"></input>
             <!--<input type="text" name="consoleDeconnexion">-->
             <p></p>
             <p><div id="solutionDeconnexion" align="center" style="display: none">bye</div></p>
@@ -134,7 +135,7 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Déplacez-vous d’abord dans le dossier voulu, ici Documents :</div></p>
             
-            <input id="consoleDeplacementDossier" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></input>
+            <input id="consoleDeplacementDossier"></input>
             <!--<input type="text" name="consoleDeplacementDossier">-->
             <p></p>
             <p><div id="solutionDeplacementDossier" align="center" style="display: none">cd Documents</div></p>
@@ -155,7 +156,7 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Créez maintenant le fichier "fichier.txt" contenant le texte suivant "texte dans le fichier de transfert" :</div></p>
             
-            <input id="consoleCreationFichier" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></input>
+            <input id="consoleCreationFichier"></input>
             <!--<input type="text" name="consoleCreationFichier">-->
             <p></p>
             <p><div id="solutionCreationFichier" align="center" style="display: none">echo texte dans le fichier de transfert > fichier.txt</div></p>
@@ -197,7 +198,7 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Connectez-vous maintenant en admin :</div></p>
             
-            <input id="consoleConnexionAdminMachineCapture" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></input>
+            <input id="consoleConnexionAdminMachineCapture"></input>
             <!--<input type="text" name="consoleCreationFichier">-->
             <p></p>
             <p><div id="solutionConnexionAdminMachineCapture" align="center" style="display: none">sudo su</div></p>
@@ -214,7 +215,7 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Effacez l'écran de la console pour plus de lisibilité :</div></p>
             
-            <input id="consoleEffacementEcranConsole" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></input>
+            <input id="consoleEffacementEcranConsole"></input>
             <!--<input type="text" name="consoleCreationFichier">-->
             <p></p>
             <p><div id="solutionEffacementEcranConsole" align="center" style="display: none">clear</div></p>
@@ -235,7 +236,7 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Lancez Wireshark :</div></p>
             
-            <input id="consoleLancementWireshark" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></input>
+            <input id="consoleLancementWireshark"></input>
             <!--<input type="text" name="consoleCreationFichier">-->
             <p></p>
             <p><div id="solutionLancementWireshark" align="center" style="display: none">wireshark</div></p>
@@ -271,7 +272,7 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Filtrez le flux passant uniquement par la MachineClient (192.168.4.204) :</div></p>
             
-            <input id="consoleFiltrage" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></input>
+            <input id="consoleFiltrage"></input>
             <!--<input type="text" name="consoleCreationFichier">-->
             <p></p>
             <p><div id="solutionFiltrage" align="center" style="display: none">ip.addr == 192.168.4.204</div></p>
@@ -316,7 +317,7 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Reconnectez-vous au serveur ftp (192.168.4.204) :</div></p>
             
-            <input id="consoleConnexion2Ftp" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></input>
+            <input id="consoleConnexion2Ftp"></input>
             <!--<input type="text" name="consoleCreationFichier">-->
             <p></p>
             <p><div id="solutionConnexion2Ftp" align="center" style="display: none">ftp 192.168.4.206</div></p>
@@ -333,7 +334,7 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Renseignez l'utilisateur (ftp) :</div></p>
             
-            <input id="consoleConnexion2Utilisateur" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></input>
+            <input id="consoleConnexion2Utilisateur"></input>
             <!--<input type="text" name="consoleCreationFichier">-->
             <p></p>
             <p><div id="solutionConnexion2Utilisateur" align="center" style="display: none"></div></p>
@@ -350,7 +351,7 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Renseignez le mot de passe (motdepasse) :</div></p>
             
-            <input id="consoleConnexion2Mdp" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></input>
+            <input id="consoleConnexion2Mdp"></input>
             <!--<input type="text" name="consoleCreationFichier">-->
             <p></p>
             <p><div id="solutionConnexion2Mdp" align="center" style="display: none">motdepasse</div></p>
@@ -367,7 +368,7 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Le dossier courant (Documents) est bien celui où se trouve notre fichier transfert.txt. Déposer ce fichier sur le serveur ftp :</div></p>
             
-            <input id="consoleDepotFichier" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></input>
+            <input id="consoleDepotFichier"></input>
             <!--<input type="text" name="consoleCreationFichier">-->
             <p></p>
             <p><div id="solutionDepotFichier" align="center" style="display: none">put transfert.txt</div></p>
@@ -384,7 +385,7 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Vérifiez ce qu’il y a actuellement sur le serveur ftp :</div></p>
             
-            <input id="consoleContenuServeur2" style="width: 50%; height: 100%; min-width: 90%; max-width: 90%; resize: none; outline: none; text-align: left;"></input>
+            <input id="consoleContenuServeur2"></input>
             <!--<input type="text" name="consoleContenuServeur">-->
             <p></p>
             <p><div id="solutionContenuServeur2" align="center" style="display: none">ls</div></p>
