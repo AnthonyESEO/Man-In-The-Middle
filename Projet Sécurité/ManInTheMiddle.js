@@ -6,18 +6,17 @@ function valider(idInputDepart, idBoutonDepart, idConteneurDestination, reponse)
 
     boutonDepart.addEventListener("click",function () {
         if (inputDepart.valueOf().value==reponse){
-            console.log("inputDepart = "+inputDepart.valueOf().value);
             elementSuivant.setAttribute("style","");
         }
         else
             console.log("FAUX");
-    })
+    });
 
     inputDepart.addEventListener("keypress", function (e) {
         if(e.keyCode == 13){
             boutonDepart.click();
         }
-    })
+    });
 
 }
 
@@ -41,6 +40,9 @@ function aide(idBouton, idInput) {
 }
 
 window.onload=function() {
+
+    valider2("commencer","ConnexionFtp");
+
     valider("consoleConnexionFtp", "BoutonValidationConnexionFtp", "ConnexionUtilisateur", "test");
     aide("boutonSolutionConnexionFtp","solutionConnexionFtp");
 
@@ -61,7 +63,7 @@ window.onload=function() {
 
     valider("consoleCreationFichier", "BoutonValidationCreationFichier", "VisualisationCommandeEcritureFichier", "test");
     aide("boutonSolutionCreationFichier","solutionCreationFichier");
-//////////////////////
+
     valider2("BoutonValidationVisualisationCommandeEcritureFichier","ConnexionAdminMachineCapture");
 
     valider("consoleConnexionAdminMachineCapture", "BoutonValidationConnexionAdminMachineCapture", "EffacementEcranConsole", "test");
@@ -72,8 +74,6 @@ window.onload=function() {
 
     valider("consoleLancementWireshark", "BoutonValidationLancementWireshark", "ChoixInterfaceRéseau", "test");
     aide("boutonSolutionLancementWireshark","solutionLancementWireshark");
-
-    //aide("boutonSolutionConnexionFtp","solutionConnexionFtp");
 
     valider2("BoutonValidationChoixInterfaceRéseau", "Filtrage");
 

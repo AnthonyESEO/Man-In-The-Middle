@@ -11,11 +11,6 @@
     <script src="ManInTheMiddle.js"></script>
     <link rel="stylesheet" href="Input.css" />
 
-
-    <!--<link rel="stylesheet" type="text/css" href="bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="bootstrap-responsive.css" />
-    <link rel="stylesheet" type="text/css" href="bootstrap-responsive.min.css" />-->
 </head>
 <body>
     <div class="container-fluid" style="background:lightblue">
@@ -28,12 +23,12 @@
         </p>
         </p>
         <p>MachineClient : 192.168.4.204</p>
-        <button class="btn btn-primary" type="button">Commencer</button>
+        <a id="commencer" href="#ConnexionFtp" class="btn btn-primary" type="button">Commencer</a>
         <br/><br/>
+        <br/><br/><br/>
     </div>
 
-    <div class="container-fluid" text-align="center" id="ConnexionFtp" heigth=100%>
-        <br/><br/><br/>
+    <div class="container-fluid" text-align="center" id="ConnexionFtp" heigth=100% style="display: none">
         <h2 align="center" id="ParagrapheConnexionFtp">Affichage console et connexion ftp</h2>
         <p> <br/>
             <div align="left">On ouvre une console CMD sous Windows :</div>
@@ -44,17 +39,17 @@
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
             <p><div align="left">Tapez la commande pour se connecter au serveur ftp (MachineServeur : 192.168.4.206) :</div></p>
             
-            <input id="consoleConnexionFtp"></input>
+            <input id="consoleConnexionFtp"/>
             <!--<input type="text" name="consoleConnexionFtp">-->
             <p></p>
             <p><div align="center" id="solutionConnexionFtp" style="display: none">ftp 192.168.4.206</div></p>
             <a id="BoutonValidationConnexionFtp" href="#ConnexionUtilisateur" class="btn btn-primary" type="button">Valider</a>
             <button id="boutonSolutionConnexionFtp" class="btn btn-warning" type="button">Afficher solution</button>
         </div>
+        <br/><br/><br/><br/><br/>
     </div>
 
     <div class="container-fluid" text-align="center" id="ConnexionUtilisateur" heigth=100% style="display: none">
-        <br/><br/><br/><br/><br/>
         <h2 align="center" id="ParagrapheConnexionUtilisateur">Renseignement de l'utilisateur</h2>
         <div style="text-align: center;">
             <img src="capture_coté_client\debut_connexion.PNG" class="img-thumbnail" />
@@ -63,17 +58,17 @@
                 <div align="left">Renseignez l’utilisateur (ftp) :</div>
             </p>
             
-            <input id="consoleConnexionUtilisateur" ></input>
+            <input id="consoleConnexionUtilisateur" />
             <!--<input type="text" name="consoleConnexionUtilisateur">-->
             <p></p>
             <p><div id="solutionConnexionUtilisateur" align="center" style="display: none">ftp</div></p>
             <a id="BoutonValidationConnexionUtilisateur" href="#ConnexionMdp" class="btn btn-primary" type="button">Valider</a>
             <button id="boutonSolutionConnexionUtilisateur" class="btn btn-warning" type="button">Afficher solution</button>
         </div>
+        <br/><br/><br/><br/><br/>
     </div>
 
     <div class="container-fluid" text-align="center" id="ConnexionMdp" heigth=100% style="display: none">
-        <br/><br/><br/><br/><br/>
         <h2 align="center" id="ParagrapheConnexionMdp">Renseignement du mot de passe</h2>
         <div style="text-align: center;">
             <img src="capture_coté_client\debut_connexion_utilisateur.PNG" class="img-thumbnail" />
@@ -87,10 +82,10 @@
             <a id="BoutonValidationConnexionMdp" href="#ContenuServeur" class="btn btn-primary" type="button">Valider</a>
             <button id="boutonSolutionConnexionMdp" class="btn btn-warning" type="button">Afficher solution</button>
         </div>
+        <br/><br/><br/><br/><br/>
     </div>
 
     <div class="container-fluid" text-align="center" id="ContenuServeur" style="display: none">
-        <br/><br/><br/><br/><br/>
         <h2 align="center" id="ParagrapheContenuServeur">Visualisation contenu serveur</h2>
         <div style="text-align: center;">
             <img src="capture_coté_client\debut_connexion_mdp.PNG" class="img-thumbnail" />
@@ -104,10 +99,10 @@
             <a id="BoutonValidationContenuServeur" href="#Deconnexion" class="btn btn-primary" type="button">Valider</a>
             <button id="boutonSolutionContenuServeur" class="btn btn-warning" type="button">Afficher solution</button>
         </div>
+        <br/><br/><br/><br/><br/>
     </div>
 
     <div class="container-fluid" text-align="center" id="Deconnexion" style="display: none">
-        <br/><br/><br/><br/><br/>
         <h2 align="center" id="ParagrapheDeconnexion">Déconnexion</h2>
         <div style="text-align: center;">
             <img src="capture_coté_client\ls_vide.PNG" class="img-thumbnail" />
@@ -121,10 +116,10 @@
             <a id="BoutonValidationDeconnexion" href="#DeplacementDossier" class="btn btn-primary" type="button">Valider</a>
             <button id="boutonSolutionDeconnexion" class="btn btn-warning" type="button">Afficher solution</button>
         </div>
+        <br/><br/><br/><br/><br/>
     </div>
 
     <div class="container-fluid" text-align="center" id="DeplacementDossier" style="display: none">
-        <br/><br/><br/><br/><br/>
         <h2 align="center" id="ParagrapheDeplacementDossier">Création de fichier (Etape 1)</h2>
         <p> <br/>
             <div align="left">On veut créer un fichier transfert.txt (pour l’envoyer ensuite sur le serveur).</div>
@@ -142,10 +137,10 @@
             <a id="BoutonValidationDeplacementDossier" href="#CreationFichier" class="btn btn-primary" type="button">Valider</a>
             <button id="boutonSolutionDeplacementDossier" class="btn btn-warning" type="button">Afficher solution</button>
         </div>
+        <br/><br/><br/><br/><br/>
     </div>
 
     <div class="container-fluid" text-align="center" id="CreationFichier" style="display: none">
-        <br/><br/><br/><br/><br/>
         <h2 align="center" id="ParagrapheCreationFichier">Création de fichier (Etape 2)</h2>
         <p> <br/>
             <div align="left">On veut créer un fichier transfert.txt (pour l’envoyer ensuite sur le serveur).</div>
@@ -163,6 +158,7 @@
             <a id="BoutonValidationCreationFichier" href="#VisualisationCommandeEcritureFichier" class="btn btn-primary" type="button">Valider</a>
             <button id="boutonSolutionCreationFichier" class="btn btn-warning" type="button">Afficher solution</button>
         </div>
+        <br/><br/><br/><br/><br/>
     </div>
 
     <div class="container-fluid" text-align="center" id="VisualisationCommandeEcritureFichier" style="display: none">
@@ -177,6 +173,7 @@
             <p><br/></p>
             <a id="BoutonValidationVisualisationCommandeEcritureFichier" href="#ConnexionAdminMachineCapture" class="btn btn-primary" type="button">Valider</a>
         </div>
+        <br/><br/><br/><br/><br/>
     </div>
 
 
@@ -187,7 +184,6 @@
 
 
     <div class="container-fluid" text-align="center" id="ConnexionAdminMachineCapture" style="display: none">
-        <br/><br/><br/><br/><br/>
         <h2 align="center" id="ParagrapheConnexionAdminMachineCapture">Connexion en administrateur sur la Machine Capture</h2>
         <p> <br/>
             <div align="left">On ouvre une console sur la Machine Capture :</div>
@@ -205,10 +201,10 @@
             <a id="BoutonValidationConnexionAdminMachineCapture" href="#EffacementEcranConsole" class="btn btn-primary" type="button">Valider</a>
             <button id="boutonSolutionConnexionAdminMachineCapture" class="btn btn-warning" type="button">Afficher solution</button>
         </div>
+        <br/><br/><br/><br/><br/>
     </div>
 
     <div class="container-fluid" text-align="center" id="EffacementEcranConsole" style="display: none">
-        <br/><br/><br/><br/><br/>
         <h2 align="center" id="ParagrapheEffacementEcranConsole">Effacement de l'écran de console</h2>
         <div style="text-align: center;">
             <img src="capture_coté_serveur\console_vide_sudo.PNG" class="img-thumbnail" />
@@ -222,10 +218,10 @@
             <a id="BoutonValidationEffacementEcranConsole" href="#LancementWireshark" class="btn btn-primary" type="button">Valider</a>
             <button id="boutonSolutionEffacementEcranConsole" class="btn btn-warning" type="button">Afficher solution</button>
         </div>
+        <br/><br/><br/><br/><br/>
     </div>
 
     <div class="container-fluid" text-align="center" id="LancementWireshark" style="display: none">
-        <br/><br/><br/><br/><br/>
         <h2 align="center" id="ParagrapheLancementWireshark">Lancement de Wireshark</h2>
         <p> <br/>
             <div align="left">Wireshark est un logiciel d'analyse du trafic réseau.</div>
@@ -243,10 +239,10 @@
             <a id="BoutonValidationLancementWireshark" href="#ChoixInterfaceRéseau" class="btn btn-primary" type="button">Valider</a>
             <button id="boutonSolutionLancementWireshark" class="btn btn-warning" type="button">Afficher solution</button>
         </div>
+        <br/><br/><br/><br/><br/>
     </div>
 
     <div class="container-fluid" text-align="center" id="ChoixInterfaceRéseau" style="display: none">
-        <br/><br/><br/><br/><br/>
         <h2 align="center" id="ParagrapheChoixInterfaceRéseau">Choix de l'interface réseau</h2>
         <p> <br/>
             <div align="left">On choisit l'interface réseau en commun avec les deux machines victimes, à surveiller (ici enp3s0) :</div>
@@ -262,10 +258,10 @@
             </p>
             <a id="BoutonValidationChoixInterfaceRéseau" href="#Filtrage" class="btn btn-primary" type="button">Valider</a>
         </div>
+        <br/><br/><br/><br/><br/>
     </div>
 
     <div class="container-fluid" text-align="center" id="Filtrage" style="display: none">
-        <br/><br/><br/><br/><br/>
         <h2 align="center" id="ParagrapheFiltrage">Filtrage</h2>
         <div style="text-align: center;">
             <img src="capture_coté_serveur\wireshark_debut.PNG" class="img-thumbnail" />
@@ -279,10 +275,10 @@
             <a id="BoutonValidationFiltrage" href="#VueCaptureMachineClient" class="btn btn-primary" type="button">Valider</a>
             <button id="boutonSolutionFiltrage" class="btn btn-warning" type="button">Afficher solution</button>
         </div>
+        <br/><br/><br/><br/><br/>
     </div>
 
     <div class="container-fluid" text-align="center" id="VueCaptureMachineClient" style="display: none">
-        <br/><br/><br/><br/><br/>
         <h2 align="center" id="ParagrapheVueCaptureMachineClient">Vue Capture Machine Client</h2>
         <p> <br/>
             <div align="left">On peut voir la capture du trafic passant par la Machine Client :</div>
@@ -296,6 +292,7 @@
             <p></p>
             <a id="BoutonValidationVueCaptureMachineClient" href="#Connexion2Ftp" class="btn btn-primary" type="button">Valider</a>
         </div>
+        <br/><br/><br/><br/><br/>
     </div>
 
 
@@ -306,7 +303,6 @@
 
 
     <div class="container-fluid" text-align="center" id="Connexion2Ftp" style="display: none">
-        <br/><br/><br/><br/><br/>
         <h2 align="center" id="ParagrapheConnexion2Ftp">Reconnexion au serveur ftp (Etape 1)</h2>
         <p> <br/>
             <div align="left">On reprend la console sur la Machine Client :</div>
@@ -324,10 +320,10 @@
             <a id="BoutonValidationConnexion2Ftp" href="#Connexion2Utilisateur" class="btn btn-primary" type="button">Valider</a>
             <button id="boutonSolutionConnexion2Ftp" class="btn btn-warning" type="button">Afficher solution</button>
         </div>
+        <br/><br/><br/><br/><br/>
     </div>
 
     <div class="container-fluid" text-align="center" id="Connexion2Utilisateur" style="display: none">
-        <br/><br/><br/><br/><br/>
         <h2 align="center" id="ParagrapheConnexion2Utilisateur">Reconnexion au serveur ftp (Etape 2)</h2>
         <div style="text-align: center;">
             <img src="capture_coté_client\deuxieme_connexion.PNG" class="img-thumbnail" />
@@ -341,10 +337,10 @@
             <a id="BoutonValidationConnexion2Utilisateur" href="#Connexion2Mdp" class="btn btn-primary" type="button">Valider</a>
             <button id="boutonSolutionConnexion2Utilisateur" class="btn btn-warning" type="button">Afficher solution</button>
         </div>
+        <br/><br/><br/><br/><br/>
     </div>
 
     <div class="container-fluid" text-align="center" id="Connexion2Mdp" style="display: none">
-        <br/><br/><br/><br/><br/>
         <h2 align="center" id="ParagrapheConnexion2Mdp">Reconnexion au serveur ftp (Etape 3)</h2>
         <div style="text-align: center;">
             <img src="capture_coté_client\deuxieme_connexion_login.PNG" class="img-thumbnail" />
@@ -358,10 +354,10 @@
             <a id="BoutonValidationConnexion2Mdp" href="#DepotFichier" class="btn btn-primary" type="button">Valider</a>
             <button id="boutonSolutionConnexion2Mdp" class="btn btn-warning" type="button">Afficher solution</button>
         </div>
+        <br/><br/><br/><br/><br/>
     </div>
 
     <div class="container-fluid" text-align="center" id="DepotFichier" style="display: none">
-        <br/><br/><br/><br/><br/>
         <h2 align="center" id="ParagrapheDepotFichier">Dépôt du fichier sur le serveur ftp</h2>
         <div style="text-align: center;">
             <img src="capture_coté_client\deuxieme_connexion_mdp.PNG" class="img-thumbnail" />
@@ -375,10 +371,10 @@
             <a id="BoutonValidationDepotFichier" href="#ContenuServeur2" class="btn btn-primary" type="button">Valider</a>
             <button id="boutonSolutionDepotFichier" class="btn btn-warning" type="button">Afficher solution</button>
         </div>
+        <br/><br/><br/><br/><br/>
     </div>
 
     <div class="container-fluid" text-align="center" id="ContenuServeur2" style="display: none">
-        <br/><br/><br/><br/><br/>
         <h2 align="center" id="ParagrapheContenuServeur2">Visualisation contenu serveur</h2>
         <div style="text-align: center;">
             <img src="capture_coté_client\put_transfert.PNG" class="img-thumbnail" />
@@ -392,10 +388,10 @@
             <a id="BoutonValidationContenuServeur2" href="#ContenuServeurWeb" class="btn btn-primary" type="button">Valider</a>
             <button id="boutonSolutionContenuServeur2" class="btn btn-warning" type="button">Afficher solution</button>
         </div>
+        <br/><br/><br/><br/><br/>
     </div>
 
     <div class="container-fluid" text-align="center" id="ContenuServeurWeb" style="display: none">
-        <br/><br/><br/><br/><br/>
         <h2 align="center" id="ParagrapheContenuServeurWeb">Visualisation contenu serveur par interface web</h2>
         <div style="text-align: center;">
             <img src="capture_coté_client\ls_apres_transfert.PNG" class="img-thumbnail" />
@@ -409,10 +405,10 @@
             
             <a id="BoutonValidationContenuServeurWeb" href="#EtudeCaptureWireshark" class="btn btn-primary" type="button">Valider</a>
         </div>
+        <br/><br/><br/><br/><br/>
     </div>
 
     <div class="container-fluid" text-align="center" id="EtudeCaptureWireshark" style="display: none">
-        <br/><br/><br/><br/><br/>
         <h2 align="center" id="ParagrapheEtudeCaptureWireshark">Etude de la capture Wireshark</h2>
         <div style="text-align: center;">
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
@@ -441,10 +437,10 @@
             </p>
             <a id="BoutonValidationEtudeCaptureWireshark" href="#Solution" class="btn btn-primary" type="button">Fin</a>
         </div>
+        <br/><br/><br/><br/><br/>
     </div>
 
     <div class="container-fluid" text-align="center" id="Solution" style="display: none">
-        <br/><br/><br/><br/><br/>
         <h2 align="center" id="ParagrapheSolution">Solution au problème</h2>
         <div style="text-align: center;">
             <!--<input type="text" style="width:1500px; height:200px;align" />-->
@@ -455,6 +451,7 @@
             </p>
             <button id="BoutonValidationEtudeCaptureWireshark2" class="btn btn-primary" type="button">Fin</button>
         </div>
+        <br/><br/><br/><br/><br/>
     </div>
 
 
