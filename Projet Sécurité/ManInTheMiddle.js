@@ -8,8 +8,25 @@ function valider(idInputDepart, idBoutonDepart, idConteneurDestination, reponse)
         if (inputDepart.valueOf().value==reponse){
             elementSuivant.setAttribute("style","");
         }
-        else
+        else{
             console.log("FAUX");
+            var div=document.createElement('div');
+            div.setAttribute("class", "alert alert-danger alert-dismissible fade show");
+
+            var strong = document.createElement("strong");
+            strong.textContent = "INCORRECT";
+
+            var button = document.createElement("button");
+            button.setAttribute("type", "button");
+            button.setAttribute("class","close");
+            button.setAttribute("data-dismiss", "alert");
+            button.setAttribute("aria-label", "Close");
+
+            div.appendChild(strong);
+            div.appendChild(button);
+            inputDepart.parentElement.insertBefore(div, null);
+            setTimeout(function(){div.remove()},3000);
+        }
     });
 
     inputDepart.addEventListener("keypress", function (e) {
